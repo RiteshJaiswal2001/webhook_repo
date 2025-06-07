@@ -6,7 +6,7 @@ const EventsTable = () => {
 
   const loadEvents = async () => {
     const data = await fetchEvents();
-    setEvents(data.reverse());
+    setEvents(data);
   };
 
   useEffect(() => {
